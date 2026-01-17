@@ -1,16 +1,97 @@
-# React + Vite
+Creative Agency Portfolio Showcase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and dynamic React application for showcasing a creative agency’s projects. This platform allows the agency to add, search, and display projects dynamically, providing a seamless experience for potential clients and collaborators.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Landing Page with Projects – Displays all projects in a clean, visually appealing layout.
 
-## React Compiler
+Add New Projects – Dynamically add new projects using a user-friendly form.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Search & Filter – Quickly search for projects by name or keywords.
 
-## Expanding the ESLint configuration
+Responsive Design – Fully responsive for desktop, tablet, and mobile screens.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Dynamic State Management – Managed via React useState; scalable architecture for future enhancements.
+
+Polished User Experience – Smooth interactions, hover effects, and accessible design.
+
+Tested Components – Unit tests with Jest and React Testing Library ensure reliability.
+
+🏗️ Project Structure
+creative-agency-portfolio/
+├─ public/
+│  ├─ index.html
+├─ src/
+│  ├─ components/
+│  │  ├─ ProjectCard.jsx
+│  │  ├─ ProjectList.jsx
+│  │  ├─ AddProjectForm.jsx
+│  │  ├─ SearchBar.jsx
+│  ├─ hooks/
+│  │  └─ useProjects.js
+│  ├─ styles/
+│  │  ├─ App.css
+│  │  ├─ ProjectCard.css
+│  ├─ tests/
+│  │  └─ ProjectList.test.jsx
+│  ├─ App.jsx
+│  └─ main.jsx
+├─ package.json
+└─ README.md
+
+⚙️ Installation & Setup
+
+Clone the repository:
+
+git clone https://github.com/yourusername/creative-agency-portfolio.git
+cd creative-agency-portfolio
+
+
+Install dependencies:
+
+npm install
+
+
+Start the development server:
+
+npm run dev
+
+
+Open your browser and navigate to http://localhost:5173 (Vite default) or http://localhost:3000 if using CRA.
+
+Run tests:
+
+npm test
+
+🎨 Technologies Used
+
+React – Component-based UI framework
+
+Vite / Create React App – Fast project bundling and development
+
+CSS Modules / Tailwind / Material UI – Styling options for responsive design
+
+Jest & React Testing Library – Unit testing and user interaction tests
+
+📐 Design Notes
+
+Layout inspired by the provided landing page mock-up.
+
+Components built for reusability and clarity.
+
+State is lifted to the nearest common parent for shared data management.
+
+Responsive breakpoints cover mobile, tablet, and desktop screens.
+
+Styling incorporates subtle hover effects, clean typography, and spacing for readability.
+
+🧪 Testing
+
+Project Rendering – Ensures all projects display correctly.
+
+Add Project Form – Tests form validation and dynamic updates to project list.
+
+Search Functionality – Validates filtering logic in real-time.
+
+Component Isolation – Each component is tested individually for expected behavior.
